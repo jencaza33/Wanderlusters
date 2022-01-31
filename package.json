@@ -1,0 +1,23 @@
+{
+  "name": "recipe_share",
+  "version": "1.0.0",
+  "description": "final project",
+  "main": "knexfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "npm test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jencaza33/recipe_share.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jencaza33/recipe_share/issues"
+  },
+  "homepage": "https://github.com/jencaza33/recipe_share#readme"
+}
