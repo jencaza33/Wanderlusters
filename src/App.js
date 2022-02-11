@@ -11,8 +11,14 @@ const App = () => {
 
     const [places, setPlaces] = useState([])
 
-    const [coordinates, setCoordinates] = useState({ lat:0, lng:0 }); //make search dynamic
+    const [coordinates, setCoordinates] = useState({}); //make search dynamic
     const [bounds, setBounds] = useState(null)
+
+    useEffect(() => { //set coordinates for users position
+        navigator.geolocation.getCurrentPosition(( { coords: { latitude, longitude }}) => {
+            setCoordinates({ lat:latitude, lng:longitude })
+        })
+    }, []);
 
     useEffect(() => {
         getPlacesData()
